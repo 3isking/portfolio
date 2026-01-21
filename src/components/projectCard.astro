@@ -1,0 +1,26 @@
+---
+const { imagesrc, title, description, techIcons = [] } = Astro.props;
+---
+<div class="projCard h-100 m-0 p-0 ">
+    <img src={imagesrc} alt="#" class="p-0">
+    <div class="p-4">
+        <h3 class="fw-bold">{title}</h3>
+        <p>{description}</p>
+        <div class="d-flex gap-2 mt-5 flex-wrap">
+            {techIcons.map((icon: string) => (
+                <img src={icon} width={24} height={24} />
+            ))}
+        </div>
+    </div>        
+</div>
+<style>
+    .projCard {
+        border: 3px;
+        border-style: solid;
+        border-radius: 5px;
+    }
+
+    .projCard * {
+        width: 100%;
+    }
+</style>

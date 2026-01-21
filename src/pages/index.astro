@@ -1,8 +1,14 @@
 ---
 import Intro from "../components/introduction.astro"
+import Project from "../components/projects.astro"
 import Base from "../layouts/base.astro"
 ---
 
 <Base title="Home">
-	<Intro></Intro>
+	<div id="home" class="py-5">
+		<Intro/>
+	</div>
+	<div id="projects" class="py-5">
+		<Project/>		
+	</div>
 </Base>

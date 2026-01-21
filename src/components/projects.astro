@@ -1,0 +1,35 @@
+---
+import ProjectCard from "../components/projectCard.astro"
+---
+<div class="container text-center">
+	<h1><span>Projects</span> Showcase</h1>
+	<p>Here are some projects I worked on in school & during my free time. <br>Do click them for a better look!</p>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="col-xxl-4 col-lg-6 my-lg-4 my-3">
+			<ProjectCard
+				imagesrc="/portfolio/assets/projects/ICS-Cyberrange.jpg"	
+				title="Portfolio Website"
+				description="My portfolio website showcasing my skills, experiences & technical projects."
+				techIcons={[
+					"/portfolio/assets/techIcons/Metasploit.svg",
+				]};
+			/>
+		</div>
+		<div class="col-xxl-4 col-lg-6 my-lg-4 my-3">
+			<ProjectCard 
+				imagesrc="/portfolio/assets/projects/ICS-Cyberrange.jpg"	
+				title="B2B Woocommerce Website"
+				description="A WordPress-powered platform that manages online Business-to-Business operations."
+			/>
+		</div>
+		<div class="col-xxl-4 col-lg-6 my-lg-4 my-3">
+			<ProjectCard 
+				imagesrc="/portfolio/assets/projects/ICS-Cyberrange.jpg"	
+				title="ICS Cybersecurity Range"
+				description="A Cybersecurity Range for students to simulate cyber attacks on small scale Industrial Control Systems."
+			/>
+		</div>
+	</div>
+</div>
